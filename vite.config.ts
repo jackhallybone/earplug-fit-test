@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: "/earplug-fit-test/",
   server: {
     watch: {
       usePolling: true, // Hot reloading watch of files mounted into the container
