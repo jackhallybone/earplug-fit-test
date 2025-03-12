@@ -5,15 +5,12 @@
   "workspaceFolder": "/app",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "bradlc.vscode-tailwindcss"
-      ]
+      "extensions": ["bradlc.vscode-tailwindcss"]
     }
   },
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "forwardPorts": [
-    5173
-  ]
+  "postCreateCommand": "apt-get update && apt-get install -y ca-certificates && apt-get clean && rm -rf /var/lib/apt/lists/*",
+  "forwardPorts": [5173]
 }
