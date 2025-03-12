@@ -1,19 +1,19 @@
 {
-    "name": "Vite Dev Container",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "app",
-    "workspaceFolder": "/app",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "bradlc.vscode-tailwindcss"
-            ]
-        }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/git:1": {}
-    },
-    "forwardPorts": [
-        5173
-    ]
+  "name": "Vite Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [
+    5173
+  ]
 }

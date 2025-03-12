@@ -1,11 +1,8 @@
 # Use a lightweight Node image
-FROM node:22-alpine
+FROM node:22-slim
 
 # Set environment variables (hot-reloading)
-ENV WATCHPACK_POLLING true
-
-# Install bash
-RUN apk add --no-cache bash
+ENV WATCHPACK_POLLING=true
 
 # Set the working directory in the container
 WORKDIR /app

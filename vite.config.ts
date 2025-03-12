@@ -12,9 +12,6 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true, // Hot reloading watch of files mounted into the container
-    },
-    host: '0.0.0.0', // Allows access from outside the container
-    port: 5173,
-    strictPort: true,
+    }
   },
 })
